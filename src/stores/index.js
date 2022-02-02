@@ -4,6 +4,7 @@ import storage from "redux-persist/lib/storage"; // defaults to localStorage for
 import allReducer from "../reducers";
 const persistConfig = {
   key: "react-root",
+  blacklist: ["books"],
   storage,
 };
 
